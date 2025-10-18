@@ -4,9 +4,13 @@
 <a href="https://arxiv.org/abs/2508.06485" target="_blank"><img src=https://img.shields.io/badge/Paper-arXiv-b5212f.svg?logo=arxiv></a>
 </div>
 
+<div align="center" style="margin-top: 30px;">
+<img src="./images/WGAST_visualization.png" width="100%"/>
+</div>
+
 ## Description
 
-<img src="https://github.com/Sofianebouaziz1/WGAST/blob/main/images/WGAST_generator.jpg" width="50%" align="right"/>
+<img src="./images/WGAST_generator.jpg" width="50%" align="right"/>
 <div style="text-align: justify;">
 <strong>WGAST</strong> (Weakly-Supervised Generative Network for Daily 10 m Land Surface Temperature Estimation via Spatio-Temporal Fusion) is a novel deep learning framework for spatio-temporal fusion of satellite images to estimate Land Surface Temperature (LST) at 10 m resolution on a daily basis. WGAST addresses the trade-off between spatial and temporal resolution in remote sensing by combining observations from Terra MODIS, Landsat 8, and Sentinel-2. It is built on a conditional generative adversarial architecture and integrates multi-level feature extraction, cosine similarity, normalization, temporal attention mechanisms, and noise suppression within an end-to-end design. WGAST is trained using a weakly-supervised strategy based on physical principles and adversarial learning, and demonstrates strong performance in recovering high-resolution thermal patterns, improving accuracy and robustness over existing methods.
 </div>
@@ -80,7 +84,7 @@ WGAST/
 The following table summarizes the results we obtained by comparing WGAST with BicubicI, Ten-ST-GEE, and FuseTen, using multiple standard metrics across four different dates. These metrics include RMSE, SSIM, PSNR, SAM, CC, and ERGAS.
 
 <div style="text-align:center;">
-  <img src="https://github.com/Sofianebouaziz1/WGAST/blob/main/images/Quantitative_results.png" width="100%"/>
+  <img src="./images/Quantitative_results.png" width="100%"/>
 </div>
 
 These results highlight the effectiveness of WGAST in achieving a strong trade-off between reducing reconstruction error and preserving quality. In most cases, WGAST outperforms prior approaches, particularly in RMSE, SSIM, PSNR, and ERGAS, validating its robustness and generalizability across diverse temporal scenes.
@@ -90,10 +94,18 @@ These results highlight the effectiveness of WGAST in achieving a strong trade-o
 The following figure presents a qualitative comparison between WGAST and FuseTen across six representative regions. Each row includes a high-resolution satellite view, the Terra MODIS LST, the Landsat 8 LST reference, the prediction from FuseTen, and the prediction from WGAST. The selected regions span a variety of landscapes, including urban, semi-urban, industrial, and vegetated environments.
 
 <div style="text-align:center;">
-  <img src="https://github.com/Sofianebouaziz1/WGAST/blob/main/images/Qualitative_results.jpg" width="100%"/>
+  <img src="./images/Qualitative_results.jpg" width="100%"/>
 </div>
 
 WGAST consistently produces more physically coherent and realistic LST outputs. It better captures fine spatial details, preserves thermal gradients, and reconstructs high-resolution daily 10 m LST outputs that even surpass the quality of the 30 m Landsat 8 reference, all from only coarse 1 km Terra MODIS input.
+
+
+### Spatio-Temporal Generalization
+WGAST is not limited to a single region, it generalizes globally. We tested it on six additional regions across diverse climates and geographies: Tours and Montpellier (France), Madrid (Spain), Rome (Italy), Cairo (Egypt), and Istanbul (Turkey).
+
+<div style="text-align:center;">
+  <img src="./images/new_roi.png" width="100%"/>
+</div>
 
 
 ## Authors 
