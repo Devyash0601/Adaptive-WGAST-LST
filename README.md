@@ -101,15 +101,15 @@ Cloud masking applied using `QA_PIXEL`.
 ---
 
 ## 🧩 Repository Structure
-WGAST/
-├── data_download/        # Scripts to download MODIS, Landsat, Sentinel data
-├── data_loader/          # Dataset loading and utilities
-├── data_preparation/     # Data normalization and triplet creation
-├── model/                # WGAST + Adaptive WGAST architectures
-├── predict/              # Inference and evaluation scripts
-├── runner/               # Experiment control and training pipeline
-├── tutorials/            # Jupyter notebooks (data → training → evaluation)
-└── README.md             # Project documentation
+WGAST/  
+├── data_download/        # Scripts to download MODIS, Landsat, Sentinel data  
+├── data_loader/          # Dataset loading and utilities  
+├── data_preparation/     # Data normalization and triplet creation  
+├── model/                # WGAST + Adaptive WGAST architectures  
+├── predict/              # Inference and evaluation scripts  
+├── runner/               # Experiment control and training pipeline  
+├── tutorials/            # Jupyter notebooks (data → training → evaluation)  
+└── README.md             # Project documentation  
 
 ---
 
